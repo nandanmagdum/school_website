@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Be Vietnam Pro", sans-serif; */
+    scroll-behavior: smooth;
+   
+}
+.color-container{
+    height: 3px;
+    background-color: rgba(4, 111, 178, 0.954);
+}
+.navbar{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    cursor: pointer;
+    
+}
+.l1{
+    height: 100px;
+    width: 150px;
+}
+
+.parts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+    
+  }
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:  rgba(4, 111, 178, 0.954);;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgb(243, 160, 51);
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(18, 12, 62); 
+   
+    border-radius: 3px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color:  rgb(18, 12, 62); 
+    transition: 0.2s;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.slideshow-container {
+    max-width: 1500px;
+    
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+   .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.running-text{
+    margin-top: -4px;
+  background-color: rgb(18, 12, 62); 
+  height: 28px;
+  position: absolute;
+  text-align: initial;
+  white-space: nowrap;
+  box-sizing: border-box;
+  color: #d6d410;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 3px;
+  }
+.about-section {
+    height: auto; /* Change height to auto */
+    margin: 100px 0; /* Remove margin-left and adjust top and bottom margin */
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.about{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 60px;
+}
+.a-head{
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.a-content{
+    font-family:  sans-serif;
+    width: 600px;
+    font-size: 17px;
+    word-spacing: 3px;
+    color: #3a3939;
+}
+.btn{
+   text-decoration: none;
+   background-color: #272f54;
+   /* background-image: linear-gradient(141deg, #272f54 0%, #2a3c93 51%, #5a6dc3 100%); */
+   width: 140px;
+   height: 50px;
+   border-radius: 8px;
+   word-spacing: 3px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 20px;
+   padding: 10px;
+  
+
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    color:  rgb(18, 12, 62);
+    background-color: #fff;
+    transition: 0.5s;
+    border: 1px solid  rgb(18, 12, 62);
+}
+.notice-box{
+    height: 500px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.n-head2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    background-color:#8c8daf ; 
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.calendar{
+    font-size: 30px;
+}
+.n-content{
+    background-color: rgb(18, 12, 62);
+    color:#d6d410; 
+    height: 350px;
+    padding: 30px;
+    word-spacing: 9px;
+    line-height: normal;
+    color: #d6d410;
+    font-family: sans-serif;
+}
+.info{
+    width: 100%;
+    height: 450px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+  
+}
+.flip-card {
+   
+    width: 270px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+   
+    perspective: 1000px;
+    margin-left: 30px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+
+ 
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    height: auto;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    transform: rotateY(180deg);
+  }
+  .title{
+    color: rgb(137, 99, 2);
+    font-size: 21px;
+    margin: 10px;
+  }
+  .text{
+    font-size: 18px;
+    
+  }
+  .sm{
+    font-weight: bolder;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: rgb(1, 53, 0.9);
+    color: white;
+  }
+  .rm{
+    color: rgba(4, 111, 178, 0.954);
+    font-size: 19px;
+    padding: 3px;
+  }
+.feature{
+    height: 400px;
+    padding: 21px 0;
+    /*-- W3layouts --*/
+    background: url(./h4.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+   
+}
+
+.f-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.f-title{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    /* padding: 40px 0 30px; */
+    font-family: PT Serif;
+    color: #fff;
+    
+}
+.sub{
+    font-size: 17px;
+    color: #fff;
+    font-weight: inherit;
+    padding: 0px 0 70px;
+}
+.f-content{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.f-c{
+    margin-left: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.ico{
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+     padding: 5px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: PT Serif;
+    color: #272f54;
+}
+.ico:hover{
+    scale: 1.3;
+    transition: 0.78s;
+    color: #fff;
+    background-color: #272f54;
+}
+.des{
+    color: #fff;
+    font-size: 23px;
+    font-weight: normal;
+}
+.contact-section{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   gap: 360px;
+  
+
+}
+.map{
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.connect-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.formfilled-container{
+    display: flex;
+    flex-direction: column;
+}
+.c-title{
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: 500;
+   line-height: 1.2;
+}
+ .form{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+     font-family: "Be Vietnam Pro", sans-serif; 
+ 
+ }
+
+ .formfield{
+    width: 100%;
+    padding: 0 2rem;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500;
+    border: none;
+    margin-top: 16px;
+ }
+ .txtarea{
+    height: auto;
+    padding: 1.6rem;
+    font-family: "Be Vietnam Pro", sans-serif; 
+ }
+ #submit-btn{
+    border: none;
+    font-size: 1.3rem;
+     color: #fff;
+    background-color: #272f54 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border-radius: 9px;
+}
+ #submit-btn:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+
+    color:  rgb(18, 12, 62);
+    background-color: #fff;
+    transition: 0.5s;
+    border: 1px solid  rgb(18, 12, 62);
+ }
+ .submit-icon{
+    padding: 6px;
+    font-size: 15px
+ }
+ .footer{
+   
+    padding: 40px;
+  
+    width: 100%;
+    height: 300px;
+    background-color:  rgba(18, 12, 62,0.9); ;
+ }
+.footer1{
+    display: flex;
+    justify-content: space-around;
+}
+ .part1,.part2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+ }
+ .part3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .call{
+    display: flex;
+    gap: 19px;
+ }
+ .end-text{
+    color: #e0e0e0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 90px;
+ }

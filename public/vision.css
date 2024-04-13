@@ -1,0 +1,57 @@
+.vision-des{
+   text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color:#272f54;
+    color: #fff;
+    margin-top: -4px;
+    padding: 3px;
+    line-height: 53px;
+    font-size: 21px;
+   font-weight: bold;
+}
+.v-head{
+  text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    color:rgb(7, 4, 31);
+    margin-top: -4px;
+    padding: 3px;
+    word-spacing: 3px;
+    margin: 32px;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 40px;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 12px;
+}
+.t1{
+    padding: 15px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+}
+.caption{
+    font-size: 18px;
+    color:rgb(7, 4, 31) ;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-align: center;
+}
+.t-info1{
+    margin-right: 50px;
+    margin-left: 10px;
+    font-family: PT Serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px ;
+    text-align: justify;
+}

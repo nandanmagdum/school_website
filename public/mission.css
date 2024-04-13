@@ -1,0 +1,23 @@
+.mission-des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color: #272f54;
+    color: #fff;
+    margin-top: -4px;
+    padding: 3px;
+}
+.m-lines,.mission{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-size: 19px;
+    margin: 50px;
+}
+/* .mission{
+
+} */
